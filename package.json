@@ -20,7 +20,7 @@
   "scripts": {
     "prepare": "npm run build",
     "clean": "rm index.html 2> /dev/null ; rm -rf css",
-    "copy:index": "postbuild -i src/index.html -o index.html -c css -r production -H",
+    "copy:index": "postbuild -i src/index.htm -o index.htm -c css -r production -H",
     "build:sass": "node-sass --include-path ./node_modules/foundation-sites/scss --output-style compressed src/scss/site.scss | hashmark -l 8 'css/main.{hash}.css'",
     "build": "npm run clean && npm run build:sass && npm run copy:index"
   }
