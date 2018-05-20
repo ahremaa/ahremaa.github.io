@@ -1,0 +1,27 @@
+{
+  "name": "ahremaa.github.io",
+  "version": "1.0.0",
+  "description": "ahremaa.fi website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahremaa/ahremaa.github.io.git"
+  },
+  "author": "Timo Tiuraniemi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahremaa/ahremaa.github.io/issues"
+  },
+  "devDependencies": {
+    "foundation-sites": "^6.4.3",
+    "hashmark": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "postbuild": "^2.1.0"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "clean": "rm index.html 2> /dev/null ; rm -rf css",
+    "copy:index": "postbuild -i src/index.html -o index.html -c css -r production -H",
+    "build:sass": "node-sass --include-path ./node_modules/foundation-sites/scss --output-style compressed src/scss/site.scss | hashmark -l 8 'css/main.{hash}.css'",
+    "build": "npm run clean && npm run build:sass && npm run copy:index"
+  }
+}
