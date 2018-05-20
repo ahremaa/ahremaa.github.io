@@ -1,6 +1,7 @@
 @import "foundation.scss";
-@include foundation-typography;
-@include foundation-button;
+// @include foundation-typography;
+// @include foundation-button;
+@include foundation-everything;
 
 body {
   margin: 0;
