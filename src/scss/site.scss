@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-$hero-full-screen-bg: url('../img/the-tall-ships-races-2528426-cropped.jpg') center center no-repeat;
+$hero-full-screen-bg: url('../img/turun-linna-cropped.jpg') center center no-repeat;
 $hero-full-screen-bg-size: cover;
 $hero-full-screen-text-color: $white;
 
@@ -16,14 +16,16 @@ $hero-full-screen-text-color: $white;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  // FIXME: Once a picture has been found, use it
-  // background: $hero-full-screen-bg;
-  // background-size: $hero-full-screen-bg-size;
-  background-color: $black;
+  background: $hero-full-screen-bg;
+  background-size: $hero-full-screen-bg-size;
 
   .middle-content-section {
     text-align: center;
     color: $hero-full-screen-text-color;
+    h1 {
+      font-size: 70px;
+    }
+    padding-bottom: 70px;
   }
 
   .top-content-section {
