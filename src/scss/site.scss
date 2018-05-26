@@ -1,9 +1,76 @@
+.Plantin-Bold {
+	font-family: Plantin-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+.Plantin-BoldItalic {
+	font-family: Plantin-BoldItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.Plantin-Italic {
+	font-family: Plantin-Italic;
+	font-weight: normal;
+	font-style: normal;
+}
+.Plantin {
+	font-family: Plantin;
+	font-weight: normal;
+	font-style: normal;
+}
+.PlantinMTPro-BoldCondensed {
+	font-family: PlantinMTPro-BoldCondensed;
+	font-weight: normal;
+	font-style: normal;
+}
+.PlantinHeadlineMTPro-LightCn {
+	font-family: PlantinHeadlineMTPro-LightCn;
+	font-weight: normal;
+	font-style: normal;
+}
+.PlantinHeadlineMTPro-BoldCn {
+	font-family: PlantinHeadlineMTPro-BoldCn;
+	font-weight: normal;
+	font-style: normal;
+}
+.PlantinHeadlineMTPro-MediumCn {
+	font-family: PlantinHeadlineMTPro-MediumCn;
+	font-weight: normal;
+	font-style: normal;
+}
+.PlantinMTPro-Semibold {
+	font-family: PlantinMTPro-Semibold;
+	font-weight: normal;
+	font-style: normal;
+}
+.PlantinMTPro-SemiboldIt {
+	font-family: PlantinMTPro-SemiboldIt;
+	font-weight: normal;
+	font-style: normal;
+}
+.PlantinMTPro-LightItalic {
+	font-family: PlantinMTPro-LightItalic;
+	font-weight: normal;
+	font-style: normal;
+}
+.PlantinMTPro-Light {
+	font-family: PlantinMTPro-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+
 @import "foundation.scss";
+$body-font-family: "Plantin", "Times New Roman", Times, serif;
+$header-font-family: "Plantin-Bold", "Times New Roman", Times, serif;
+@include foundation-global-styles;
+$anchor-color: #87CEFA;
+$anchor-color-hover: #79b9e1;
 @include foundation-typography;
 $button-background: #FFFFFF;
 $button-background-hover: #87CEFA;
 $button-color: $black;
 @include foundation-button;
+@include foundation-grid;
 
 body {
   margin: 0;
@@ -30,8 +97,9 @@ $hero-full-screen-text-color: $white;
     }
     svg {
       display: block;
-      padding-bottom: 5vh;
+      padding-bottom: 8vh;
       width: 80vw;
+      height: 300px;
     }
     padding-bottom: 30vh;
   }
@@ -74,14 +142,37 @@ $hero-full-screen-text-color: $white;
   }
 }
 
-#main-content-section {
+#yritys {
   padding: 46px 0 46px 0;
+  .row {
+    padding: 30px 0 30px 0;
+    a {
+      color: #517b96 !important;
+      &:hover {
+        color: #79b9e1 !important;
+      }
+    }
+
+  }
 }
 
-
-a.button {
-  // background-color: #2e2e2e;
-  // text-transform: uppercase;
-  // font-size: 14px;
+footer {
+  padding: 86px 0 86px 0;
+  background-color: #1b2932;
+  color: $white;
+  p {
+    padding-top: 40px;
+  }
 }
 
+.text-large {
+  font-size: 30px;
+}
+
+.text-medium {
+  font-size: 20px;
+}
+
+.text-tiny {
+  font-size: 10px;
+}
