@@ -1,5 +1,8 @@
 @import "foundation.scss";
 @include foundation-typography;
+$button-background: #FFFFFF;
+$button-background-hover: #87CEFA;
+$button-color: $black;
 @include foundation-button;
 
 body {
@@ -25,7 +28,12 @@ $hero-full-screen-text-color: $white;
     h1 {
       font-size: 70px;
     }
-    padding-bottom: 70px;
+    svg {
+      display: block;
+      padding-bottom: 5vh;
+      width: 80vw;
+    }
+    padding-bottom: 30vh;
   }
 
   .top-content-section {
@@ -69,3 +77,11 @@ $hero-full-screen-text-color: $white;
 #main-content-section {
   padding: 46px 0 46px 0;
 }
+
+
+a.button {
+  // background-color: #2e2e2e;
+  // text-transform: uppercase;
+  // font-size: 14px;
+}
+
