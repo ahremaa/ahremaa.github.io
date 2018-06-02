@@ -101,7 +101,6 @@ $hero-full-screen-text-color: $white;
       width: 80vw;
       height: 300px;
     }
-    padding-bottom: 30vh;
   }
 
   .top-content-section {
@@ -166,11 +165,19 @@ footer {
 }
 
 .text-large {
-  font-size: 30px;
+  font-size: 25px;
+  @include breakpoint(medium) {
+    // All CSS in here goes inside the media query
+    font-size: 30px;
+  }
 }
 
 .text-medium {
-  font-size: 20px;
+  font-size: 17px;
+  @include breakpoint(medium) {
+    // All CSS in here goes inside the media query
+    font-size: 20px;
+  }
 }
 
 .text-tiny {
